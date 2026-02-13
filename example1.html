@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Git Push Steps</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 20px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      padding: 16px;
+    }
+    .card h3 {
+      margin: 0 0 10px;
+      font-size: 18px;
+      color: #007bff;
+    }
+    .card p {
+      font-size: 14px;
+      color: #555;
+      margin: 4px 0;
+    }
+    code {
+      display: block;
+      background: #eee;
+      padding: 6px;
+      border-radius: 4px;
+      margin-top: 8px;
+      font-family: Consolas, monospace;
+    }
+    @media (max-width: 768px) {
+      .steps {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h2>Git Push Workflow</h2>
+  <div class="steps">
+    <div class="card">
+      <h3>1. Initialize Repo</h3>
+      <p>Create a Git repository in your project folder.</p>
+      <code>git init</code>
+    </div>
+    <div class="card">
+      <h3>2. Add Remote</h3>
+      <p>Link your local repo to GitHub.</p>
+      <code>git remote add origin https://github.com/username/repo.git</code>
+    </div>
+    <div class="card">
+      <h3>3. Stage Files</h3>
+      <p>Add all changes to staging area.</p>
+      <code>git add .</code>
+    </div>
+    <div class="card">
+      <h3>4. Commit Changes</h3>
+      <p>Save changes with a message.</p>
+      <code>git commit -m "Initial commit"</code>
+    </div>
+    <div class="card">
+      <h3>5. Push to Remote</h3>
+      <p>Send changes to GitHub (main branch).</p>
+      <code>git push -u origin main</code>
+    </div>
+    <div class="card">
+      <h3>6. Future Pushes</h3>
+      <p>Next time, just run:</p>
+      <code>git push</code>
+    </div>
+  </div>
+</body>
+</html>
